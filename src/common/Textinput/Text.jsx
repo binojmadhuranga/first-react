@@ -5,7 +5,7 @@ export default function TextInput({ value, onChange, placeholder }) {
   return (
     <input
       type="text"
-      placeholder="Enter Name"
+      placeholder= {placeholder}
       className="text-input"
     />
   );

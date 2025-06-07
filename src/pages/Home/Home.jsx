@@ -4,11 +4,14 @@ import Text from "../../common/Textinput/Text";
 
 function Home() {
   return (
+
     <div>
       <h1>Home Page</h1>
-      <Button />
-       <Text />
+      <Button name={"create new "}/>
+      <Button name={"Change  "}/>
+       <Text placeholder={"Type Here"} />
     </div>
+    
     
   );
 }
