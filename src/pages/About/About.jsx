@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { use, useRef, useState } from "react";
 import Button from "../../common/Button/Button";
 import Text from "../../common/Textinput/Text";
 import TextInput from "../../common/Textinput2/Textinput";
@@ -6,6 +6,8 @@ import './index.css';
 
 
 export default function About() {
+
+  const inputRef = useRef(null);    //create ref
 
 
   const [value, setvalue] = useState(0);
@@ -50,12 +52,14 @@ export default function About() {
 
       <h1>{value}</h1>
       <br /><br /><br />
-
-
+   
+       <input type="text" ref={inputRef} />
+       <br /><br />
+ 
       <div className="form">
         <h1>Form</h1>
-        
-        <TextInput placeholder={"First Name"} onChange={(e) => setFirstName(e.target.value)} />
+
+        <TextInput placeholder={"First Name"} onChange={(e) => setFirstName(e.target.value)}  />
         <TextInput placeholder={"Last Name"} onChange={(e) => setLastName(e.target.value)} />
         <TextInput placeholder={"Address"} onChange={(e) => setAddress(e.target.value)} />
 
@@ -73,7 +77,7 @@ export default function About() {
 
         <Button name={"Submit"} bgColor={'green'} txtSixe={'18px'} onClick={handleSubmit} />
 
-
+        <Button name={"point"} bgColor={'yellow'} txtSixe={'18px'} onClick={() => { inputRef.current.focus() }} />
 
       </div>
 
