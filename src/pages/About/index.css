@@ -1,0 +1,22 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid red;
+    padding: 20px;
+    width: 300px;
+    background-color: azure;
+}
+
+.form>h1{
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+}.checkbox-container {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.checkbox-container input {
+  margin-right: 8px;
+}
