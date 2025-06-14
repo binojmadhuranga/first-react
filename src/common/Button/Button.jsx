@@ -5,14 +5,14 @@ export default function Button({name,bgColor,txtSixe,onClick}) {
 
   // Function
 
-  function handleClick() {
-   onClick();
+//   function handleClick() {
+//    onClick();
 
-  }
+//   }
 
   
 
  return (
-    <button className='btn' style={{backgroundColor: bgColor, fontSize: txtSixe}} onClick={handleClick}>{name}</button>
+    <button className='btn' style={{backgroundColor: bgColor, fontSize: txtSixe}} onClick={onClick}>{name}</button>
  )
 }
