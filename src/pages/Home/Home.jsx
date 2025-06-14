@@ -23,6 +23,8 @@ function Home() {
         description={"This is a description of the card. It contains some information about the content of the card."} 
         image={gallery} />
 
+        
+
 
     </div>
 
