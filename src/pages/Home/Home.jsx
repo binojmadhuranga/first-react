@@ -7,8 +7,8 @@ function Home() {
 
     <div>
       <h1>Home Page</h1>
-      <Button name={"create new "}/>
-      <Button name={"Change  "}/>
+      <Button name={"create new"} bgColor={'green'} txtSixe={'18px'}/>
+      <Button name={"Change  "} bgColor={'007bff'} txtSixe={'20px'} />
        <Text placeholder={"Type Here"} />
     </div>
     
